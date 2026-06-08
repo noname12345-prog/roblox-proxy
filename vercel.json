@@ -1,9 +1,8 @@
 {
-    "functions": {
-        "api/badges.js": {
-            "memory": 128,
-            "maxDuration": 10
+    "rewrites": [
+        {
+            "source": "/api/badges/:path*",
+            "destination": "https://badges.roblox.com/:path*"
         }
-    }
+    ]
 }
- 
