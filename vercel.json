@@ -1,4 +1,10 @@
 {
+    "rewrites": [
+        {
+            "source": "/api/badges/:path*",
+            "destination": "/api/badges"
+        }
+    ],
     "functions": {
         "api/badges.js": {
             "memory": 128,
