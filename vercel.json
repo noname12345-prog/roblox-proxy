@@ -1,12 +1,6 @@
 {
-    "rewrites": [
-        {
-            "source": "/api/badges/:path*",
-            "destination": "/api/badges"
-        }
-    ],
     "functions": {
-        "api/badges.js": {
+        "api/badges/[...path].js": {
             "memory": 128,
             "maxDuration": 10
         }
